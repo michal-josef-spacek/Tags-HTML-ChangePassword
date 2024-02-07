@@ -19,6 +19,7 @@ Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
+SIGNATURE
 t/Tags-HTML-ChangePassword/01-use.t
 t/Tags-HTML-ChangePassword/02-version.t
 t/Tags-HTML-ChangePassword/03-new.t

@@ -1,0 +1,56 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.87.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: RIPEMD160
+
+SHA256 490ba2e2b5a3fc41c76d362b455e8feb9b6ebe130ee8ef81c3db0710fd449996 ChangePassword.pm
+SHA256 ab38374a911f6db3f58e8bbe47b809bc8c1ace88368b94d4ee1d9ca55418c0f9 Changes
+SHA256 e9721661dbfb60dadebf3cd197cbc00239895aa73fb3431e19490cfad301cf99 LICENSE
+SHA256 fce5036ed8373030e9b071568885c6c8469160e0d7e747889428b304b758e532 MANIFEST
+SHA256 c8b3294b1111cf132b90165260d2294daec2f75235dbbaae277ab44b32692bad META.yml
+SHA256 c09db6ccd6c59d139050f7e97fda9a9c8f04a8c2a3d7e8b39b94a4bbe39d05c1 Makefile.PL
+SHA256 0717ab6db178109ce12dffb1966b5a3cacecd8be0f0846c1736bddeeb41c7460 README
+SHA256 81040b998d5501a859a523436240f018e2e310da3f843e7d7bd92233c2825874 examples/plack_app_change_password.pl
+SHA256 3eec904fd1541cf98360f22aa59534d1049b47ac14e22c3a72f2df466a9f1429 examples/print_block_html_and_css.pl
+SHA256 ee09992addc23e2b680cb91c4f6388f9cb8b26fbadcf881d92c941ea80e17b07 images/plack_app_change_password.png
+SHA256 cd5397bbe618f5bbd4e12a33b0cf5d21114e771c2dbd0ce28e2135beb52c35a8 inc/Module/Install.pm
+SHA256 8bd506c33fb78f10f6451413e931ca23541fcc4eebe05fcb7c7c9577341223c4 inc/Module/Install/AuthorRequires.pm
+SHA256 1b5430a46a35142ef8914d8c745196fca825defc9dfa7e389299bf294613825e inc/Module/Install/AuthorTests.pm
+SHA256 798836f9ccb8d204b1be31fc3835631f57e9d818b21a8f0d14bfcfb82ff4a72a inc/Module/Install/Base.pm
+SHA256 d64cd4c16f83c5baf11f64a44bea3a0abc060a49da5aba040f0eb01394bf75ab inc/Module/Install/Can.pm
+SHA256 65d7a6098bf3f829e8c1c2865476d3537aa6f0ad0ffc9149e10812c856529043 inc/Module/Install/Fetch.pm
+SHA256 70c4b77acab3ff51dfb318110369607cb109e1c319459249623b787cf3859750 inc/Module/Install/Makefile.pm
+SHA256 14556386168007ce913e669fc08a332ccdb6140246fd55a90c879b5190c1b57a inc/Module/Install/Metadata.pm
+SHA256 53825bc78e4c910b888160bc148c8bc211be58e02b99c8edcbf4854f95faa049 inc/Module/Install/ReadmeFromPod.pm
+SHA256 4c746c02c5cc19bed4c352e76205b4adff4c45ce8310d71294e1b83c059659c2 inc/Module/Install/Win32.pm
+SHA256 d3d9b4583243c470ae895defa4c44564485b53693cba1c50ab0320768f443e97 inc/Module/Install/WriteAll.pm
+SHA256 10927d5f6c78e8007ecd8e415a4ebc9ddb4bc498f12e43d991495a0162e2f516 t/Tags-HTML-ChangePassword/01-use.t
+SHA256 de36c2f3cdc12c5ebe75af7436d5c1850615a17102e4ccab71c5ed8197f4cb27 t/Tags-HTML-ChangePassword/02-version.t
+SHA256 324463f3900374860d5fec43003e9c76688f740ea35a15d4002dd2de5c938363 t/Tags-HTML-ChangePassword/03-new.t
+SHA256 e62d926a051bb9f4a41c8e1cca51c9f8df0b4cb1d8d36560b8855a27e1576bf4 xt/Tags-HTML-ChangePassword/01-pod_coverage.t
+SHA256 97559e7308be949908761c1fbb74d7808159d2e7b03d6b22f0e1e3b316ba12f0 xt/Tags-HTML-ChangePassword/02-pod.t
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBAwAdFiEEbhzVZugfHqSVNvE7YSp92FNcjtAFAmXD4akACgkQYSp92FNc
+jtDr7wv/b5L8+JEillJoEvFsmD26osZAOW8of9U+LAHAg/4F5MG3LSQScPx8JZE6
+N08jBzhoU5MVPCFFxygDeHBDMBg4oWF++mPeq2Du77BZ84mqvOBqoS846lqDcann
++ZuoGvn2zZsUTJMDqjL8gs7KDODMntMawd296kU81Df2j2VCyRDmafLsIWzxGIDd
+Si18+uWkSmPc3Kobk7B5zLmJjsLJ7ObB+NaWSd7nIjdB6m2K7qBtotitf3RlqBsW
+5JrS+PshFL/J1I6JbkaqXrz/ucrbpXSrRMf29600WFhc0HSle+EiM83O0QFtdOVn
+zvCajIYdrd585oQZLaz+/igyOC9J5JEpCa1z6xDpuxDx/zyMgzNCGXUJPupJgSJ5
+IOLCihDCTj4g1THe6ee+5iUrvPqoOMl6b3B+c/TwkTFTSS7Um9YfuMfluEOITfqd
+nQ8Hdsy9zzd9MqFzrypfNwtVUrdruhfkQicx5EP12/XE//GJEQRXSSnCvwsSxC8/
+kQOCFIpP
+=MMyF
+-----END PGP SIGNATURE-----
