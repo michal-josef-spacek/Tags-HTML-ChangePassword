@@ -22,7 +22,6 @@ requires 'Class::Utils' => 0;
 requires 'Error::Pure' => 0;
 requires 'List::Util' => 1.33;
 requires 'Readonly' => 0;
-requires 'Scalar::Util' => 0;
 requires 'Tags::HTML' => 0;
 requires 'Tags::HTML::Messages' => 0.09;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Tags-HTML-ChangePassword/issues';

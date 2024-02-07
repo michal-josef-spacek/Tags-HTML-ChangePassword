@@ -8,7 +8,6 @@ use Class::Utils qw(set_params split_params);
 use Error::Pure qw(err);
 use List::Util qw(none);
 use Readonly;
-use Scalar::Util qw(blessed);
 use Tags::HTML::Messages;
 
 Readonly::Array our @FORM_METHODS => qw(post get);
