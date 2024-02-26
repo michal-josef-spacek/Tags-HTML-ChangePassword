@@ -1,4 +1,5 @@
 0.03
+ - Add error to init() and prepare() without data.
  - Fix link to image in doc.
 
 0.02 2024-02-08T22:35:31+01:00

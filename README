@@ -109,6 +109,12 @@ ERRORS
                      Parameter 'css' must be a 'CSS::Struct::Output::*' class.
                      Parameter 'tags' must be a 'Tags::Output::*' class.
 
+     init():
+             No messages to init.
+
+     prepare():
+             No message types to init.
+
      process():
              From Tags::HTML::process():
                      Parameter 'tags' isn't defined.

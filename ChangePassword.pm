@@ -89,6 +89,10 @@ sub _cleanup {
 sub _prepare {
 	my ($self, $message_types_hr) = @_;
 
+	if (! defined $message_types_hr) {
+		err 'No message types to init.';
+	}
+
 	$self->{'_message_types'} = $message_types_hr;
 
 	return;
@@ -96,6 +100,10 @@ sub _prepare {
 
 sub _init {
 	my ($self, $messages_ar) = @_;
+
+	if (! defined $messages_ar) {
+		err 'No messages to init.';
+	}
 
 	$self->{'_messages'} = $messages_ar;
 
@@ -388,6 +396,12 @@ Returns undef.
          From Tags::HTML::new():
                  Parameter 'css' must be a 'CSS::Struct::Output::*' class.
                  Parameter 'tags' must be a 'Tags::Output::*' class.
+
+ init():
+         No messages to init.
+
+ prepare():
+         No message types to init.
 
  process():
          From Tags::HTML::process():
