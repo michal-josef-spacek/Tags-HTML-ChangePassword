@@ -90,7 +90,7 @@ sub _prepare {
 	my ($self, $message_types_hr) = @_;
 
 	if (! defined $message_types_hr) {
-		err 'No message types to init.';
+		err 'No message types to prepare.';
 	}
 
 	$self->{'_message_types'} = $message_types_hr;
@@ -410,7 +410,7 @@ Returns undef.
          No messages to init.
 
  prepare():
-         No message types to init.
+         No message types to prepare.
 
  process():
          From Tags::HTML::process():

@@ -121,7 +121,7 @@ ERRORS
              No messages to init.
 
      prepare():
-             No message types to init.
+             No message types to prepare.
 
      process():
              From Tags::HTML::process():

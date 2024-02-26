@@ -1,4 +1,5 @@
 0.04
+ - Fix error message.
  - Remove obsolete module usage from doc example.
 
 0.03 2024-02-26T11:03:48+01:00
