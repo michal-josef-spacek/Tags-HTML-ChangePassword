@@ -2,7 +2,9 @@ TODO
 ====
 1. Finish tests.
 2. Rewrite to Tags::HTML::Element.
-3.
+3. Add check for messages in init()
+   Use Tags::HTML::Messages check. Prevent double check.
+4.
 
 Applied
 =======
