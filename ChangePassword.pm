@@ -555,7 +555,7 @@ Returns undef.
 =begin html
 
 <a href="https://raw.githubusercontent.com/michal-josef-spacek/Tags-HTML-ChangePassword/master/images/plack_app_change_password.png">
-  <img src="https://raw.githubusercontent.com/michal-josef-spacek/Tags-HTML-Login-ChangePassword/master/images/plack_app_change_password.png" alt="Web app example" width="300px" height="300px" />
+  <img src="https://raw.githubusercontent.com/michal-josef-spacek/Tags-HTML-ChangePassword/master/images/plack_app_change_password.png" alt="Web app example" width="300px" height="300px" />
 </a>
 
 =end html
