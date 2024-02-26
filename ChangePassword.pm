@@ -282,6 +282,7 @@ Tags::HTML::ChangePassword - Tags helper for change password.
  use Tags::HTML::ChangePassword;
 
  my $obj = Tags::HTML::ChangePassword->new(%params);
+ $obj->cleanup;
  $obj->prepare($message_types_hr);
  $obj->init($messages_ar);
  $obj->process;
@@ -351,6 +352,14 @@ Default value is:
 =back
 
 Returns instance of object.
+
+=head2 C<cleanup>
+
+ $obj->cleanup;
+
+Process cleanup after page run.
+
+Returns undef.
 
 =head2 C<init>
 
