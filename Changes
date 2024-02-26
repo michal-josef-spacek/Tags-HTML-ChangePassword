@@ -1,3 +1,5 @@
+0.04
+
 0.03 2024-02-26T11:03:48+01:00
  - Add error to init() and prepare() without data.
  - Add missing cleanup() method to doc.
