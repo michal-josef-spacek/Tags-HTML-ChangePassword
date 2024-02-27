@@ -1,5 +1,6 @@
 0.04
  - Add tests for prepare().
+ - Add tests for process().
  - Fix error message.
  - Remove obsolete module usage from doc example.
 
