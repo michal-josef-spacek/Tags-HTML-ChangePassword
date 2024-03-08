@@ -35,7 +35,7 @@ requires:
   Error::Pure: 0
   List::Util: 1.33
   Readonly: 0
-  Tags::HTML: 0
+  Tags::HTML: 0.08
   Tags::HTML::Messages: 0.09
   perl: 5.8.0
 resources:
