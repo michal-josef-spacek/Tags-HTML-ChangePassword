@@ -1,4 +1,5 @@
 0.05
+ - Add tests for process_css().
  - Fix minimal dependency for Tags::HTML to 0.08 (thanks Andreas J. König,
    GH#1).
 
