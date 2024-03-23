@@ -385,7 +385,7 @@ Returns undef.
 
  $obj->process;
 
-Process Tags structure for register form.
+Process Tags structure for change password form.
 
 Returns undef.
 
@@ -393,7 +393,7 @@ Returns undef.
 
  $obj->process_css;
 
-Process CSS::Struct structure for register form.
+Process CSS::Struct structure for change password form.
 
 Returns undef.
 
@@ -442,7 +442,7 @@ Returns undef.
          'tags' => $tags,
  );
 
- # Process login button.
+ # Process change password form.
  $obj->process_css;
  $obj->process;
 
@@ -555,16 +555,16 @@ Returns undef.
          'xml' => 1,
          'preserved' => ['style'],
  );
- my $register = Tags::HTML::ChangePassword->new(
+ my $change_password = Tags::HTML::ChangePassword->new(
          'css' => $css,
          'tags' => $tags,
  );
- $register->process_css;
+ $change_password->process_css;
  my $app = Plack::App::Tags::HTML->new(
          'component' => 'Tags::HTML::Container',
          'data' => [sub {
                  my $self = shift;
-                 $register->process;
+                 $change_password->process;
                  return;
          }],
          'css' => $css,

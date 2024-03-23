@@ -15,7 +15,7 @@ my $obj = Tags::HTML::ChangePassword->new(
         'tags' => $tags,
 );
 
-# Process login button.
+# Process change password form.
 $obj->process_css;
 $obj->process;
 
