@@ -113,6 +113,10 @@ ERRORS
      new():
              From Class::Utils::set_params():
                      Unknown parameter '%s'.
+             From Mo::utils::Language::check_language_639_2():
+                     Parameter 'lang' doesn't contain valid ISO 639-2 code.
+                             Codeset: %s
+                             Value: %s
              From Tags::HTML::new():
                      Parameter 'css' must be a 'CSS::Struct::Output::*' class.
                      Parameter 'tags' must be a 'Tags::Output::*' class.
@@ -280,8 +284,8 @@ EXAMPLE2
      # Output screenshot is in images/ directory.
 
 DEPENDENCIES
-    Class::Utils, Error::Pure, List::Util, Readonly, Tags::HTML,
-    Tags::HTML::Messages.
+    Class::Utils, Error::Pure, List::Util, Mo::utils::Language, Readonly,
+    Tags::HTML, Tags::HTML::Messages.
 
 SEE ALSO
     Tags::HTML::Login::Access

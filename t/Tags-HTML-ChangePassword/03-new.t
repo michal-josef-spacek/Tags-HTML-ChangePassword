@@ -6,7 +6,7 @@ use English;
 use Error::Pure::Utils qw(clean);
 use Tags::HTML::ChangePassword;
 use Tags::Output::Raw;
-use Test::More 'tests' => 10;
+use Test::More 'tests' => 11;
 use Test::NoWarnings;
 
 # Test.
@@ -72,6 +72,16 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'form_method' has bad value.\n",
 	"Parameter 'form_method' has bad value.");
+clean();
+
+# Test.
+eval {
+	Tags::HTML::ChangePassword->new(
+		'lang' => 'xxx',
+	);
+};
+is($EVAL_ERROR, "Parameter 'lang' doesn't contain valid ISO 639-2 code.\n",
+	"Parameter 'lang' doesn't contain valid ISO 639-2 code.");
 clean();
 
 # Test.

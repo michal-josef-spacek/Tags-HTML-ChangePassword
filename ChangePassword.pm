@@ -7,6 +7,7 @@ use warnings;
 use Class::Utils qw(set_params split_params);
 use Error::Pure qw(err);
 use List::Util qw(none);
+use Mo::utils::Language 0.05 qw(check_language_639_2);
 use Readonly;
 use Tags::HTML::Messages;
 
@@ -54,7 +55,8 @@ sub new {
 		err "Parameter 'form_method' has bad value.";
 	}
 
-	# TODO Check lang.
+	# Check lang.
+	check_language_639_2($self, 'lang');
 
 	# Check text for lang
 	if (! defined $self->{'text'}) {
@@ -402,6 +404,10 @@ Returns undef.
  new():
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
+         From Mo::utils::Language::check_language_639_2():
+                 Parameter 'lang' doesn't contain valid ISO 639-2 code.
+                         Codeset: %s
+                         Value: %s
          From Tags::HTML::new():
                  Parameter 'css' must be a 'CSS::Struct::Output::*' class.
                  Parameter 'tags' must be a 'Tags::Output::*' class.
@@ -587,6 +593,7 @@ Returns undef.
 L<Class::Utils>,
 L<Error::Pure>,
 L<List::Util>,
+L<Mo::utils::Language>,
 L<Readonly>,
 L<Tags::HTML>,
 L<Tags::HTML::Messages>.

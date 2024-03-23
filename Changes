@@ -1,4 +1,5 @@
 0.06
+ - Add checking of language.
  - Fix doc typos.
  - Sort methods in SYNOPSIS section in doc.
 
