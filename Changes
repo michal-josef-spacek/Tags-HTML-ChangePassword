@@ -1,6 +1,7 @@
 0.06
  - Add checking of language.
  - Fix doc typos.
+ - Improve test of rich constructor.
  - Sort methods in SYNOPSIS section in doc.
 
 0.05 2024-03-08T09:38:04+01:00

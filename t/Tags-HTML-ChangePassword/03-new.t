@@ -18,6 +18,7 @@ isa_ok($obj, 'Tags::HTML::ChangePassword');
 # Test.
 $obj = Tags::HTML::ChangePassword->new(
 	'css' => CSS::Struct::Output::Raw->new,
+	'lang' => 'eng',
 	'tags' => Tags::Output::Raw->new,
 );
 isa_ok($obj, 'Tags::HTML::ChangePassword');
