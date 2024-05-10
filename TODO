@@ -1,7 +1,5 @@
 TODO
 ====
-1. Finish tests.
-Missing test for translation and error (_text) in CSS.
 2. Rewrite to Tags::HTML::Element.
 3. Add check for messages in init()
    Use Tags::HTML::Messages check. Prevent double check.
@@ -9,3 +7,6 @@ Missing test for translation and error (_text) in CSS.
 
 Applied
 =======
+1. Finish tests.
+Missing test for translation and error (_text) in CSS.
+OK [20240510] skim
