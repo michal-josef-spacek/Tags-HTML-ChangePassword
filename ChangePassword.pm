@@ -60,7 +60,7 @@ sub new {
 	# Check lang.
 	check_language_639_2($self, 'lang');
 
-	# Check text for lang
+	# Check text.
 	if (! defined $self->{'text'}) {
 		err "Parameter 'text' is required.";
 	}
