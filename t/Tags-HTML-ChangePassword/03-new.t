@@ -6,6 +6,7 @@ use English;
 use Error::Pure::Utils qw(clean);
 use Tags::HTML::ChangePassword;
 use Tags::Output::Structure;
+use Test::MockObject;
 use Test::More 'tests' => 16;
 use Test::NoWarnings;
 
@@ -39,9 +40,7 @@ clean();
 # Test.
 eval {
 	Tags::HTML::ChangePassword->new(
-		'tags' => Tags::HTML::ChangePassword->new(
-			'tags' => Tags::Output::Structure->new,
-		),
+		'tags' => Test::MockObject->new,
 	);
 };
 is(
@@ -54,7 +53,7 @@ clean();
 # Test.
 eval {
 	Tags::HTML::ChangePassword->new(
-		'css' => Tags::Output::Structure->new,
+		'css' => Test::MockObject->new,
 		'tags' => Tags::Output::Structure->new,
 	);
 };
