@@ -295,6 +295,16 @@ Tags::HTML::ChangePassword - Tags helper for change password.
  $obj->process;
  $obj->process_css;
 
+=head1 DESCRIPTION
+
+L<Tags> helper to print HTML page of form for changing of password.
+
+The page contains optional logo, fields for old and new password and button to
+process workflow. All texts on the page are translatable.
+
+This helper is created for usage in L<Plack::App::ChangePassword> plack
+application which is full application for changing of password.
+
 =head1 METHODS
 
 =head2 C<new>
