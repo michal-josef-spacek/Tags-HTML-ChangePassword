@@ -352,10 +352,10 @@ Default value is undef.
 
 =item * C<text>
 
-Hash reference with keys defined language in ISO 639-3 code and value with hash
+Hash reference with keys defined language in ISO 639-2 code and value with hash
 reference with texts.
 
-Required keys are 'login', 'password_label', 'username_label' and 'submit'.
+Required keys are 'change_password', 'old_password_label', 'password1_label', 'password2_label' and 'submit'.
 
 Default value is:
 
