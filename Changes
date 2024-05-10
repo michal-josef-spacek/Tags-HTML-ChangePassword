@@ -3,6 +3,7 @@
  - Add check for text translations. Move error from process() to constructor.
  - Add checking of language.
  - Add description to doc.
+ - Add links to doc.
  - Fix doc typos.
  - Fix output in example.
  - Improve test of rich constructor.

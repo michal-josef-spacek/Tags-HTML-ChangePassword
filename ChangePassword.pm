@@ -320,7 +320,7 @@ Constructor.
 
 =item * C<css>
 
-'CSS::Struct::Output' object for L<process_css> processing.
+L<CSS::Struct::Output> object for L<process_css> processing.
 
 Default value is undef.
 
@@ -346,7 +346,7 @@ Default value is 'eng'.
 
 =item * C<tags>
 
-'Tags::Output' object.
+L<Tags::Output> object.
 
 Default value is undef.
 
@@ -405,7 +405,7 @@ Returns undef.
 
  $obj->process;
 
-Process Tags structure for change password form.
+Process L<Tags> structure for change password form.
 
 Returns undef.
 
@@ -413,7 +413,7 @@ Returns undef.
 
  $obj->process_css;
 
-Process CSS::Struct structure for change password form.
+Process L<CSS::Struct> structure for change password form.
 
 Returns undef.
 
