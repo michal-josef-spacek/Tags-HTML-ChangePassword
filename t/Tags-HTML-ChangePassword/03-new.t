@@ -6,7 +6,7 @@ use English;
 use Error::Pure::Utils qw(clean);
 use Tags::HTML::ChangePassword;
 use Tags::Output::Raw;
-use Test::More 'tests' => 13;
+use Test::More 'tests' => 16;
 use Test::NoWarnings;
 
 # Test.
@@ -145,4 +145,34 @@ eval {
 };
 is($EVAL_ERROR, "Text for lang 'cze' and key 'change_password' doesn't exist.\n",
 	"Text for lang 'cze' and key 'change_password' doesn't exist (no right translations).");
+clean();
+
+# Test.
+eval {
+	Tags::HTML::ChangePassword->new(
+		'width' => 'foo',
+	);
+};
+is($EVAL_ERROR, "Parameter 'width' doesn't contain number.\n",
+	"Parameter 'width' doesn't contain number (foo).");
+clean();
+
+# Test.
+eval {
+	Tags::HTML::ChangePassword->new(
+		'width' => '123',
+	);
+};
+is($EVAL_ERROR, "Parameter 'width' doesn't contain unit.\n",
+	"Parameter 'width' doesn't contain unit (123).");
+clean();
+
+# Test.
+eval {
+	Tags::HTML::ChangePassword->new(
+		'width' => '123xx',
+	);
+};
+is($EVAL_ERROR, "Parameter 'width' contain bad unit.\n",
+	"Parameter 'width' contain bad unit (123xx).");
 clean();

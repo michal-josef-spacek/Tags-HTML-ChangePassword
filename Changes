@@ -1,4 +1,5 @@
 0.06
+ - Add check for 'width' parameter if it's CSS unit.
  - Add check for text translations. Move error from process() to constructor.
  - Add checking of language.
  - Add description to doc.
