@@ -15,7 +15,7 @@ use Tags::HTML::Messages;
 Readonly::Array our @FORM_METHODS => qw(post get);
 Readonly::Array our @TEXT_KEYS => qw(change_password old_password_label password1_label password2_label submit);
 
-our $VERSION = 0.06;
+our $VERSION = 0.07;
 
 # Constructor.
 sub new {
@@ -661,6 +661,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.06
+0.07
 
 =cut
