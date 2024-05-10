@@ -1,4 +1,5 @@
 0.06
+ - Add check for text translations. Move error from process() to constructor.
  - Add checking of language.
  - Fix doc typos.
  - Improve test of rich constructor.

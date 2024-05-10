@@ -6,7 +6,7 @@ use English;
 use Error::Pure::Utils qw(clean);
 use Tags::HTML::ChangePassword;
 use Tags::Output::Raw;
-use Test::More 'tests' => 11;
+use Test::More 'tests' => 13;
 use Test::NoWarnings;
 
 # Test.
@@ -113,4 +113,36 @@ eval {
 };
 is($EVAL_ERROR, "Texts for language 'eng' doesn't exist.\n",
 	"Texts for language 'eng' doesn't exist.");
+clean();
+
+# Test.
+eval {
+	Tags::HTML::ChangePassword->new(
+		'lang' => 'cze',
+		'text' => {
+			'cze' => {},
+		},
+	);
+};
+is($EVAL_ERROR, "Number of texts isn't same as expected.\n",
+	"Number of texts isn't same as expected (no translations for cze).");
+clean();
+
+# Test.
+eval {
+	Tags::HTML::ChangePassword->new(
+		'lang' => 'cze',
+		'text' => {
+			'cze' => {
+				'foo' => 'Foo',
+				'bar' => 'Bar',
+				'baz' => 'Baz',
+				'xxx' => 'XXX',
+				'yyy' => 'YYY',
+			},
+		},
+	);
+};
+is($EVAL_ERROR, "Text for lang 'cze' and key 'change_password' doesn't exist.\n",
+	"Text for lang 'cze' and key 'change_password' doesn't exist (no right translations).");
 clean();

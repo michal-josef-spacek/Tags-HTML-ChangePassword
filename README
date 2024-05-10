@@ -120,6 +120,7 @@ ERRORS
              From Tags::HTML::new():
                      Parameter 'css' must be a 'CSS::Struct::Output::*' class.
                      Parameter 'tags' must be a 'Tags::Output::*' class.
+             Text for lang '%s' and key '%s' doesn't exist.
 
      init():
              No messages to init.
@@ -131,7 +132,6 @@ ERRORS
              From Tags::HTML::process():
                      Parameter 'tags' isn't defined.
              Bad message data object.
-             Text for lang '%s' and key '%s' doesn't exist.
 
      process_css():
              From Tags::HTML::process_css():

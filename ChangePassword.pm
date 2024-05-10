@@ -12,6 +12,7 @@ use Readonly;
 use Tags::HTML::Messages;
 
 Readonly::Array our @FORM_METHODS => qw(post get);
+Readonly::Array our @TEXT_KEYS => qw(change_password old_password_label password1_label password2_label submit);
 
 our $VERSION = 0.06;
 
@@ -67,6 +68,14 @@ sub new {
 	}
 	if (! exists $self->{'text'}->{$self->{'lang'}}) {
 		err "Texts for language '$self->{'lang'}' doesn't exist.";
+	}
+	if (@TEXT_KEYS != keys %{$self->{'text'}->{$self->{'lang'}}}) {
+		err "Number of texts isn't same as expected.";
+	}
+	foreach my $req_text_key (@TEXT_KEYS) {
+		if (! exists $self->{'text'}->{$self->{'lang'}}->{$req_text_key}) {
+			err "Text for lang '$self->{'lang'}' and key '$req_text_key' doesn't exist.";
+		}
 	}
 
 	$self->{'_tags_messages'} = Tags::HTML::Messages->new(
@@ -259,10 +268,6 @@ sub _process_css {
 sub _text {
 	my ($self, $key) = @_;
 
-	if (! exists $self->{'text'}->{$self->{'lang'}}->{$key}) {
-		err "Text for lang '$self->{'lang'}' and key '$key' doesn't exist.";
-	}
-
 	return $self->{'text'}->{$self->{'lang'}}->{$key};
 }
 
@@ -411,6 +416,7 @@ Returns undef.
          From Tags::HTML::new():
                  Parameter 'css' must be a 'CSS::Struct::Output::*' class.
                  Parameter 'tags' must be a 'Tags::Output::*' class.
+         Text for lang '%s' and key '%s' doesn't exist.
 
  init():
          No messages to init.
@@ -422,7 +428,6 @@ Returns undef.
          From Tags::HTML::process():
                  Parameter 'tags' isn't defined.
          Bad message data object.
-         Text for lang '%s' and key '%s' doesn't exist.
 
  process_css():
          From Tags::HTML::process_css():
