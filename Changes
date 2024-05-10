@@ -2,6 +2,7 @@
  - Add check for text translations. Move error from process() to constructor.
  - Add checking of language.
  - Fix doc typos.
+ - Fix output in example.
  - Improve test of rich constructor.
  - Sort methods in SYNOPSIS section in doc.
 

@@ -520,8 +520,8 @@ Returns undef.
  #     </legend>
  #     <p>
  #       <label for="old_password">
+ #         Old password
  #       </label>
- #       Old password
  #       <input type="password" name="old_password" id="old_password" autofocus=
  #         "autofocus">
  #       </input>
