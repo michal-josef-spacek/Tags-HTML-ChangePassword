@@ -1,25 +1,25 @@
 use strict;
 use warnings;
 
-use CSS::Struct::Output::Raw;
+use CSS::Struct::Output::Structure;
 use English;
 use Error::Pure::Utils qw(clean);
 use Tags::HTML::ChangePassword;
-use Tags::Output::Raw;
+use Tags::Output::Structure;
 use Test::More 'tests' => 16;
 use Test::NoWarnings;
 
 # Test.
 my $obj = Tags::HTML::ChangePassword->new(
-	'tags' => Tags::Output::Raw->new,
+	'tags' => Tags::Output::Structure->new,
 );
 isa_ok($obj, 'Tags::HTML::ChangePassword');
 
 # Test.
 $obj = Tags::HTML::ChangePassword->new(
-	'css' => CSS::Struct::Output::Raw->new,
+	'css' => CSS::Struct::Output::Structure->new,
 	'lang' => 'eng',
-	'tags' => Tags::Output::Raw->new,
+	'tags' => Tags::Output::Structure->new,
 );
 isa_ok($obj, 'Tags::HTML::ChangePassword');
 
@@ -40,7 +40,7 @@ clean();
 eval {
 	Tags::HTML::ChangePassword->new(
 		'tags' => Tags::HTML::ChangePassword->new(
-			'tags' => Tags::Output::Raw->new,
+			'tags' => Tags::Output::Structure->new,
 		),
 	);
 };
@@ -54,8 +54,8 @@ clean();
 # Test.
 eval {
 	Tags::HTML::ChangePassword->new(
-		'css' => Tags::Output::Raw->new,
-		'tags' => Tags::Output::Raw->new,
+		'css' => Tags::Output::Structure->new,
+		'tags' => Tags::Output::Structure->new,
 	);
 };
 is(

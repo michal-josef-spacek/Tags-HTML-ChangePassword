@@ -7,6 +7,7 @@
  - Fix output in example.
  - Improve test of rich constructor.
  - Regen output image of plack app example.
+ - Remove Tags::Output::Raw and CSS::Struct::Output::Raw from tests.
  - Sort methods in SYNOPSIS section in doc.
 
 0.05 2024-03-08T09:38:04+01:00
