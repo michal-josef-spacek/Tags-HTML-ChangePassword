@@ -7,7 +7,7 @@ use warnings;
 use Class::Utils qw(set_params split_params);
 use Error::Pure qw(err);
 use List::Util qw(none);
-use Mo::utils::CSS 0.06 qw(check_css_unit);
+use Mo::utils::CSS 0.07 qw(check_css_unit);
 use Mo::utils::Language 0.05 qw(check_language_639_2);
 use Readonly;
 use Tags::HTML::Messages;
@@ -423,9 +423,9 @@ Returns undef.
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
          From Mo::utils::CSS::check_css_unit():
-                 Parameter 'width' doesn't contain number.
+                 Parameter 'width' doesn't contain unit number.
                          Value: %s
-                 Parameter 'width' doesn't contain unit.
+                 Parameter 'width' doesn't contain unit name.
                          Value: %s
                  Parameter 'width' contain bad unit.
                          Unit: %s
