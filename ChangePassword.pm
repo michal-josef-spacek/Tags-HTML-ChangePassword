@@ -274,7 +274,6 @@ sub _text {
 	return $self->{'text'}->{$self->{'lang'}}->{$key};
 }
 
-
 1;
 
 __END__
