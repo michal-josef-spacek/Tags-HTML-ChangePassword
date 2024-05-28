@@ -137,6 +137,10 @@ ERRORS
              From Tags::HTML::new():
                      Parameter 'css' must be a 'CSS::Struct::Output::*' class.
                      Parameter 'tags' must be a 'Tags::Output::*' class.
+             Number of texts isn't same as expected.
+             Parameter 'text' is required.
+             Parameter 'text' must be a hash with language texts.
+             Texts for language '%s' doesn't exist.
              Text for lang '%s' and key '%s' doesn't exist.
 
      init():
